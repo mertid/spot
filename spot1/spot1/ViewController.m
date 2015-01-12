@@ -33,7 +33,7 @@
     PFObject * venueInfo;
     NSMutableArray * venuesInfo;
     PFObject * tailgateOption;
-    Annotation * annotation;
+   // Annotation * annotation;
 
     
 }
@@ -103,19 +103,19 @@
         
         NSLog(@"location %@",location);
   
-    annotation = [[Annotation alloc] init];
+    Annotation * AnnVc = [[Annotation alloc] init];
         CLLocationCoordinate2D venueCoord = CLLocationCoordinate2DMake(location.latitude, location.longitude);
         //        CLLocation *  eventLoc = event.getLocation;
         //        CLGeocoder * geoCoder = [[CLGeocoder alloc] init];
         
         
-        annotation.title = venueInfo[@"TailgateName"];
+        AnnVc.title = venueInfo[@"TailgateName"];
     
         
         
-        [annotation setCoordinate:venueCoord];
+        [AnnVc setCoordinate:venueCoord];
         
-        [mapView addAnnotation: annotation];
+        [mapView addAnnotation: AnnVc];
     }
 }
 
@@ -123,13 +123,13 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
 {
- //   Annotation * ann = annotation;
+    // Annotation * ann = annotationView;
     
     if  (mapView.userLocation.location.coordinate.latitude == annotation.coordinate.latitude
          && mapView.userLocation.location.coordinate.longitude == annotation.coordinate.longitude)
     {
         
-    } else {
+    }else {
         MKPinAnnotationView * annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"pin"];
         annotationView.draggable = NO;
         
@@ -151,10 +151,8 @@
         return annotationView;
     }
     return nil;
+
 }
-
-
-
 
 -(void)getAllVenues
 {

@@ -12,20 +12,24 @@
 	<dict>
 		<key>7AFE266152EE52B55A03844FD1A42AEA35545C65</key>
 		<string>https://github.com/mertid/IOS_IronYard.git</string>
+		<key>EC397A96E9ADD9C356BE83E5971DD94DE34595C1</key>
+		<string>https://github.com/mertid/spot.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>spot1/spot1.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7AFE266152EE52B55A03844FD1A42AEA35545C65</key>
+		<string>../../../../IOS_IronYard</string>
+		<key>EC397A96E9ADD9C356BE83E5971DD94DE34595C1</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/mertid/IOS_IronYard.git</string>
+	<string>https://github.com/mertid/spot.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>7AFE266152EE52B55A03844FD1A42AEA35545C65</string>
+	<string>EC397A96E9ADD9C356BE83E5971DD94DE34595C1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>7AFE266152EE52B55A03844FD1A42AEA35545C65</string>
 			<key>IDESourceControlWCCName</key>
 			<string>IOS_IronYard</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EC397A96E9ADD9C356BE83E5971DD94DE34595C1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>spot</string>
 		</dict>
 	</array>
 </dict>
